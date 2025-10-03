@@ -1,2 +1,2 @@
 @pedrolastiko
-🇫🇷➡️🇨🇦 Crazy Skier & Alpinist, team @_Univershell_
+🇫🇷➡️🇨🇦 Crazy Skier & amateur Alpinist
