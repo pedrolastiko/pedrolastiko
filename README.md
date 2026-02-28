@@ -1,7 +1,7 @@
 # @pedrolastiko
-Crazy Skier & amateur Alpinist
+⛷️ Crazy Skier & amateur Alpinist 🗻
 
-**VP Cybersecurity | Consulting & Advisory | Montréal (QC), Canada**  
+**VP Cybersecurity Advisory Consulting | Montréal (QC), Canada sometimes in Paris France **  
 I lead cybersecurity practices focused on **business outcomes** and one recurring goal: **turning cybersecurity into something actionable** (frameworks → decisions → delivery).
 
 ## 🔭 What I’m working on
@@ -17,9 +17,7 @@ I lead cybersecurity practices focused on **business outcomes** and one recurrin
 - **DevSecOps & Cloud Security**: secure pipelines, guardrails, posture management
 - **OT/IoT Security**: industrial risk, segmentation, monitoring
 
-## 📌 Featured repositories (customize)
-> Pin 2–3 flagship repos on your profile to keep the story focused.
-
+## 📌 Featured repositories
 - **NIST-Questionnaire** — NIST CSF 2.0 maturity assessment (questionnaire + recommendations)
 - **Digital Sovereignty Assessment** — sovereignty evaluation (residency, control, dependencies)
 - **ISO 27001 Thermometer** — simple posture visualization toward certification
