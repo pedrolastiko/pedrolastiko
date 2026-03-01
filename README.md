@@ -1,7 +1,7 @@
 # @pedrolastiko
 ⛷️ Crazy Skier & amateur Alpinist 🗻
 
-**VP Cybersecurity Advisory Consulting | Montréal (QC), Canada sometimes in Paris France **  
+**VP Cybersecurity Advisory Consulting | Montréal (QC), Canada sometimes in Paris France**  
 I lead cybersecurity practices focused on **business outcomes** and one recurring goal: **turning cybersecurity into something actionable** (frameworks → decisions → delivery).
 
 ## 🔭 What I’m working on
