@@ -18,10 +18,10 @@ I lead cybersecurity practices focused on **business outcomes** and one recurrin
 - **OT/IoT Security**: industrial risk, segmentation, monitoring
 
 ## 📌 Featured repositories
-- **NIST-Questionnaire** — NIST CSF 2.0 maturity assessment (questionnaire + recommendations)
-- **Digital Sovereignty Assessment** — sovereignty evaluation (residency, control, dependencies)
-- **ISO 27001 Thermometer** — simple posture visualization toward certification
-- **Consulting Templates** — slides, matrices, checklists (P/P/T, RACI, backlog, etc.)
+- [**NIST-Questionnaire**] (https://pedrolastiko.github.io/NIST-Questionnaire/) — NIST CSF 2.0 maturity assessment (questionnaire + recommendations) 
+- [**Digital Sovereignty Assessment**] (https://pedrolastiko.github.io/Digital-Sovereignty-Assessment-Tool/) — sovereignty evaluation (residency, control, dependencies)
+- [**Cybersecurity Glossary**] (https://pedrolastiko.github.io/Cybersecurity-Glossary/) — Interactive Explorer - 154 Terms & 200+ Technologies
+- **Consulting Templates** — slides, matrices, checklists (P/P/T, RACI, backlog, etc.) **WIP**
 
 ## 🎤 Community & speaking
 Active in the Québec / Canadian cybersecurity ecosystem: conferences, knowledge sharing, and CISO community engagement.
