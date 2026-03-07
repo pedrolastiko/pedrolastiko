@@ -17,6 +17,7 @@
 ## 📌 Featured repositories
 - [**NIST-Questionnaire**](https://pedrolastiko.github.io/NIST-Questionnaire/) — NIST CSF 2.0 maturity assessment (questionnaire + recommendations) 
 - [**Digital Sovereignty Assessment**](https://pedrolastiko.github.io/Digital-Sovereignty-Assessment-Tool/) — sovereignty evaluation (residency, control, dependencies)
+- [**Rosettable**](https://github.com/pedrolastiko/Rosettable) - Just as the Rosetta Stone decoded three scripts in parallel, Rosettable translates and aligns 8 security frameworks across 17 domains.
 - [**Cybersecurity Glossary**](https://pedrolastiko.github.io/Cybersecurity-Glossary/) — Interactive Explorer - 154 Terms & 200+ Technologies
 - [**Awesome-Responsible-AI**](https://github.com/pedrolastiko/Awesome-Responsible-AI) - A curated list of resources to design, deploy, and govern AI systems responsibly.
 - **Consulting Templates** — slides, matrices, checklists (P/P/T, RACI, backlog, etc.) **WIP**
