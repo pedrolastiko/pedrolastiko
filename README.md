@@ -1,9 +1,6 @@
 # @pedrolastiko
 ⛷️ Crazy Skier & amateur Alpinist 🗻
 
-**VP Cybersecurity Advisory Consulting | Montréal, Canada sometimes in Paris, France**  
-I lead cybersecurity practices focused on **business outcomes** and one recurring goal: **turning cybersecurity into something actionable** (frameworks → decisions → delivery).
-
 ## 🔭 What I’m working on
 - **Maturity assessment tools** (NIST CSF 2.0, ISO/IEC 27001, Digital Sovereignty)
 - **Consulting-ready playbooks & templates**: People / Process / Technology, roadmaps, operating models
@@ -23,15 +20,6 @@ I lead cybersecurity practices focused on **business outcomes** and one recurrin
 - [**Cybersecurity Glossary**](https://pedrolastiko.github.io/Cybersecurity-Glossary/) — Interactive Explorer - 154 Terms & 200+ Technologies
 - [**Awesome-Responsible-AI**](https://github.com/pedrolastiko/Awesome-Responsible-AI) - A curated list of resources to design, deploy, and govern AI systems responsibly.
 - **Consulting Templates** — slides, matrices, checklists (P/P/T, RACI, backlog, etc.) **WIP**
-
-## 🎤 Community & speaking
-Active in the Québec / Canadian cybersecurity ecosystem: conferences, knowledge sharing, and CISO community engagement.
-
-## 🤝 Let’s collaborate
-Happy to connect on:
-- building **assessment tools** (questionnaires, dashboards, automation)
-- challenging a **cyber strategy** or a **security roadmap**
-- industrializing a **cyber advisory offer** or a **delivery model**
 
 ## 📝 Disclaimer
 Opinions are my own. Public repositories are provided for **education / acceleration** and may require adaptation to fit a specific context.
