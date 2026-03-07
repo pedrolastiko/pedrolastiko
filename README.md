@@ -21,6 +21,7 @@ I lead cybersecurity practices focused on **business outcomes** and one recurrin
 - [**NIST-Questionnaire**](https://pedrolastiko.github.io/NIST-Questionnaire/) — NIST CSF 2.0 maturity assessment (questionnaire + recommendations) 
 - [**Digital Sovereignty Assessment**](https://pedrolastiko.github.io/Digital-Sovereignty-Assessment-Tool/) — sovereignty evaluation (residency, control, dependencies)
 - [**Cybersecurity Glossary**](https://pedrolastiko.github.io/Cybersecurity-Glossary/) — Interactive Explorer - 154 Terms & 200+ Technologies
+- [**Awesome-Responsible-AI**](https://github.com/pedrolastiko/Awesome-Responsible-AI) - A curated list of resources to design, deploy, and govern AI systems responsibly.
 - **Consulting Templates** — slides, matrices, checklists (P/P/T, RACI, backlog, etc.) **WIP**
 
 ## 🎤 Community & speaking
