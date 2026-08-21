@@ -1,5 +1,5 @@
 # @pedrolastiko
-⛷️ Crazy Backcountry Skier, Alpinistv Amateur & (slow)Trail Runner - Looking for the next adventure in the mountains 🗻
+⛷️ Crazy Backcountry Skier, Amateur Alpinist & (slow) Trail Runner — always looking for the next adventure in the mountains 🗻
 
 ## 🔭 What I’m working on
 - **Maturity assessment tools** (NIST CSF 2.0, ISO/IEC 27001, Digital Sovereignty)
