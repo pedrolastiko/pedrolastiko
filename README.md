@@ -20,7 +20,6 @@
 - [**Rosettable**](https://github.com/pedrolastiko/Rosettable) - Just as the Rosetta Stone decoded three scripts in parallel, Rosettable translates and aligns security frameworks across domains.
 - [**Cybersecurity Glossary**](https://pedrolastiko.github.io/Cybersecurity-Glossary/) — Interactive Explorer - 150+ Terms & 200+ Technologies
 - [**Awesome-Responsible-AI**](https://github.com/pedrolastiko/Awesome-Responsible-AI) - A curated list of resources to design, deploy, and govern AI systems responsibly.
-- **Consulting Templates** — slides, matrices, checklists (P/P/T, RACI, backlog, etc.) **WIP**
 
 ## 📝 Disclaimer
 Opinions are my own. Public repositories are provided for **education / acceleration** and may require adaptation to fit a specific context.
