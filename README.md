@@ -1,6 +1,6 @@
 # @pedrolastiko
 ⛷️ Crazy Backcountry Skier, Amateur Alpinist & (slow) Trail Runner — always looking for the next adventure in the mountains 🗻
-
+[**CV**](https://pedrolastiko.github.io/pedrolastiko/)
 ## 🔭 What I’m working on
 - **Maturity assessment tools** (NIST CSF 2.0, ISO/IEC 27001, Digital Sovereignty)
 - **Consulting-ready playbooks & templates**: People / Process / Technology, roadmaps, operating models
