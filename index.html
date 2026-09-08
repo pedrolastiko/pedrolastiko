@@ -109,6 +109,14 @@
   .pdf-btn svg{width:16px; height:16px; stroke:currentColor; flex:none}
   @media (max-width:680px){ .pdf-btn{right:16px; bottom:16px; padding:11px 16px} }
 
+  /* Bouton flottant : changer de langue */
+  .lang-btn{position:fixed; top:24px; right:24px; z-index:50; display:inline-flex; align-items:center; gap:7px; background:#fff; color:var(--accent); border:1px solid var(--line); border-radius:999px; padding:9px 16px; font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:600; letter-spacing:.03em; cursor:pointer; box-shadow:0 6px 18px rgba(20,30,30,.08); transition:transform .15s, box-shadow .15s, background .15s, border-color .15s}
+  .lang-btn:hover{background:var(--accent-soft); border-color:var(--accent); transform:translateY(-1px)}
+  .lang-btn:active{transform:translateY(0)}
+  .lang-btn:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+  .lang-btn svg{width:14px; height:14px; stroke:currentColor; flex:none}
+  @media (max-width:680px){ .lang-btn{top:16px; right:16px; padding:8px 12px} }
+
   @media (max-width:680px){
     #cv{padding:34px 26px}
     #header{grid-template-columns:1fr; gap:16px} #name{font-size:36px}
@@ -129,6 +137,7 @@
     .page-header .pc{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--soft)}
     .mandate{break-inside:avoid} .xp{break-inside:avoid}
     .pdf-btn{display:none !important}
+    .lang-btn{display:none !important}
   }
 </style>
 </head>
@@ -139,14 +148,14 @@
   <section id="header">
     <div id="name-block">
       <div id="name">Pierre<br><b>Le Calvez</b></div>
-      <div id="role">Vice-Président, Business Consulting — Cybersécurité<br>Coleader de la pratique nationale · CGI Canada</div>
+      <div id="role" data-i18n="role">Vice-Président, Business Consulting — Cybersécurité<br>Coleader de la pratique nationale · CGI Canada</div>
     </div>
     <div id="intro">
-      <p>J'accompagne les organisations sur leurs enjeux de résilience, d'intelligence artificielle et de souveraineté numérique.</p>
+      <p data-i18n="introText">J'accompagne les organisations sur leurs enjeux de résilience, d'intelligence artificielle et de souveraineté numérique.</p>
     </div>
   </section>
 
-  <div class="kw-cloud">
+  <div class="kw-cloud" data-i18n="kwCloud">
     <span class="kw">Souveraineté numérique</span>
     <span class="kw">Résilience cyber</span>
     <span class="kw">IA de confiance</span>
@@ -164,19 +173,19 @@
     <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Montréal, QC</span>
   </section>
 
-  <h1>Executive<span class="rule"></span></h1>
-  <div class="exec">
+  <h1><span>Executive</span><span class="rule"></span></h1>
+  <div class="exec" data-i18n="exec">
     <p>Je suis un dirigeant reconnu en cybersécurité, confiance numérique et transformation des organisations, cumulant plus de 22 années d'expérience en technologies de l'information, dont plus de 17 ans en cybersécurité.</p>
     <p>Vice-président Business Consulting chez CGI Canada, je co-dirige la pratique nationale cybersécurité et j'accompagne des dirigeants, conseils d'administration et organisations critiques dans leurs enjeux de résilience, d'intelligence artificielle et de souveraineté numérique.</p>
     <p>Mon expertise couvre la cybersécurité stratégique, la gouvernance, la sécurité des environnements IT & OT, le cloud, la gestion des identités, la cyberdéfense ainsi que les transformations technologiques liées à l'intelligence artificielle. Mes travaux récents portent sur la sécurité des IA Frontières, la gouvernance de l'IA, la souveraineté numérique.</p>
     <p>Conférencier et formateur, je contribue activement au développement de la confiance numérique au travers de publications, conférences et groupes de travail internationaux. Je représente également CGI auprès de la communauté de Cybersécurité et notamment des initiatives avec Cybereco.</p>
   </div>
 
-  <h1>Expérience<span class="rule"></span></h1>
+  <h1><span data-i18n="hExperience">Expérience</span><span class="rule"></span></h1>
   <div class="grid-2c">
-    <div class="yr">2021 – présent</div>
+    <div class="yr" data-i18n="exp1Yr">2021 – présent</div>
     <div class="xp">
-      <div class="pos">Vice-Président Business Consulting — Cybersécurité</div>
+      <div class="pos" data-i18n="exp1Pos">Vice-Président Business Consulting — Cybersécurité</div>
       <div class="co-row"><span class="logo lg-cgi" aria-hidden="true"><svg viewBox="0 0 192 192">
 <g transform="scale(0.25) translate(0.000000,768.000000) scale(0.100000,-0.100000)"><path fill="#ffffff" d="M2130 5110 c-171 -37 -273 -70 -375 -123 -90 -47 -91 -48 -171 -101
 -168 -113 -325 -294 -408 -471 -15 -33 -32 -68 -37 -78 -5 -10 -20 -52 -33
@@ -289,7 +298,7 @@ l32 -19 0 -264 c0 -228 -2 -265 -15 -270 -9 -4 -66 18 -128 48 -167 82 -234
 624 16 624 11 0 14 5 10 16 -3 9 -6 18 -6 20 0 13 -71 -1 -105 -20z"/></g>
 <g transform="scale(0.25) translate(0.000000,768.000000) scale(0.100000,-0.100000)"><path fill="#dd1a3b" d="M0 3840 l0 -3840 360 0 360 0 0 3840 0 3840 -360 0 -360 0 0 -3840z"/></g>
 </svg></span><span class="co">CGI · Montréal, QC, Canada</span></div>
-      <ul>
+      <ul data-i18n="exp1Li">
         <li>Structuration et développement d'une équipe de 85+ professionnels à Montréal.</li>
         <li>Développement et industrialisation du catalogue d'offres cybersécurité.</li>
         <li>Direction de mandats de conseil en cybersécurité au niveau exécutif.</li>
@@ -301,7 +310,7 @@ l32 -19 0 -264 c0 -228 -2 -265 -15 -270 -9 -4 -66 18 -128 48 -167 82 -234
 
     <div class="yr">2015 – 2021</div>
     <div class="xp">
-      <div class="pos">Senior Manager — Gouvernance, Audit et Réponse aux incidents</div>
+      <div class="pos" data-i18n="exp2Pos">Senior Manager — Gouvernance, Audit et Réponse aux incidents</div>
       <div class="co-row"><span class="logo lg-ntt" aria-hidden="true"><svg viewBox="0 0 96 90">
 <g transform="scale(0.1111111111111111) translate(0.000000,810.000000) scale(0.100000,-0.100000)"><path fill="#0068bb" d="M2870 8075 c-28 -29 -85 -49 -202 -69 -48 -8 -127 -28 -175 -45 -48
 -16 -104 -32 -123 -36 -19 -4 -70 -24 -112 -45 -42 -22 -102 -46 -133 -54 -31
@@ -412,8 +421,8 @@ m280 -1035 c11 -11 20 -25 20 -30 0 -28 -30 -77 -55 -90 -27 -14 -76 -77 -142
 33 29 89 35 124 7 45 21 79 45 115 19 28 40 72 46 97 7 27 28 66 51 94 21 26
 39 53 39 60 0 6 15 31 33 55 17 23 40 54 49 69 23 35 87 106 178 198 110 110
 132 130 165 147 37 19 121 20 155 2z"/></g>
-</svg></span><span class="co">NTT Data · Multi-sites, Europe</span></div>
-      <ul>
+</svg></span><span class="co" data-i18n="exp2Co">NTT Data · Multi-sites, Europe</span></div>
+      <ul data-i18n="exp2Li">
         <li>Création d'offres de services en gouvernance, audit et réponse aux incidents.</li>
         <li>Gestion d'une équipe de 20 consultants.</li>
         <li>Mise en place de programmes de gestion des risques liés aux tiers.</li>
@@ -424,7 +433,7 @@ m280 -1035 c11 -11 20 -25 20 -30 0 -28 -30 -77 -55 -90 -27 -14 -76 -77 -142
 
     <div class="yr">2010 – 2015</div>
     <div class="xp">
-      <div class="pos">Auditeur en cybersécurité</div>
+      <div class="pos" data-i18n="exp3Pos">Auditeur en cybersécurité</div>
       <div class="co-row"><span class="logo lg-devoteam" aria-hidden="true"><svg viewBox="0 0 300 300">
 <g transform="scale(0.3333333333333333) translate(0.000000,900.000000) scale(0.100000,-0.100000)"><path fill="#fffefe" d="M4617 7393 c-4 -3 -7 -1063 -7 -2354 0 -2175 -1 -2349 -17 -2364 -15
 -15 -62 -16 -537 -13 -553 5 -572 6 -742 58 -225 69 -398 216 -499 425 -50
@@ -497,7 +506,7 @@ c1 1124 5 1558 13 1567 9 11 164 14 858 16 l846 3 3 524 c2 413 0 526 -10 533
 -22 475 -3 522 -2 537 13 16 15 17 189 17 2364 0 1291 3 2351 7 2354 3 4 250
 6 547 5 l541 -3 3 -784z"/></g>
 </svg></span><span class="co">Devoteam · Paris, France</span></div>
-      <ul>
+      <ul data-i18n="exp3Li">
         <li>Réalisation d'audits ISO 27001 et d'évaluations de risques.</li>
         <li>Réalisation de tests d'intrusion et d'analyses post-incident.</li>
       </ul>
@@ -505,7 +514,7 @@ c1 1124 5 1558 13 1567 9 11 164 14 858 16 l846 3 3 524 c2 413 0 526 -10 533
 
     <div class="yr">2008 – 2009</div>
     <div class="xp">
-      <div class="pos">Assistant — Bureau du CISO</div>
+      <div class="pos" data-i18n="exp4Pos">Assistant — Bureau du CISO</div>
       <div class="co-row"><span class="logo lg-allianz" aria-hidden="true"><svg viewBox="0 0 180 180">
 <g transform="scale(0.2) translate(0.000000,900.000000) scale(0.100000,-0.100000)"><path fill="#ffffff" d="M0 4500 l0 -4500 4500 0 4500 0 0 4500 0 4500 -4500 0 -4500 0 0
 -4500z m5010 4076 c384 -56 636 -111 835 -182 55 -19 117 -40 138 -45 22 -5
@@ -633,7 +642,7 @@ c-30 11 -692 12 -805 0z"/></g>
 585 -12 556 0 573 1 583 19 7 14 9 594 7 1838 l-2 1818 -28 76 c-58 158 -163
 233 -350 250 -127 11 -754 10 -784 -2z"/></g>
 </svg></span><span class="co">Allianz · Paris, France</span></div>
-      <ul>
+      <ul data-i18n="exp4Li">
         <li>Conception de tableaux de bord et d'indicateurs de sécurité.</li>
         <li>Suivi des plans de remédiation issus des audits.</li>
         <li>Contribution aux initiatives de continuité d'activité.</li>
@@ -644,14 +653,14 @@ c-30 11 -692 12 -805 0z"/></g>
     <div class="xp">
       <div class="pos">IT Operations & Project Coordination</div>
       <div class="co-row"><span class="logo lg-neutral" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span><span class="co">Paris, France</span></div>
-      <ul>
+      <ul data-i18n="exp5Li">
         <li>Développement de solides bases en opérations IT d'entreprise avant la transition vers la cybersécurité.</li>
       </ul>
     </div>
   </div>
 
-  <h1>Domaines d'expertise<span class="rule"></span></h1>
-  <div class="skills">
+  <h1><span data-i18n="hSkills">Domaines d'expertise</span><span class="rule"></span></h1>
+  <div class="skills" data-i18n="skillsBlob">
     <div class="sn">Souveraineté numérique</div>
     <div class="sd">Cadre d'évaluation, réduction des dépendances technologiques, autonomie et résilience.</div>
     <div class="sn">Résilience & gestion du risque cyber</div>
@@ -663,11 +672,11 @@ c-30 11 -692 12 -805 0z"/></g>
     <div class="sn">Sécurité OT & infrastructures critiques</div>
     <div class="sd">Convergence IT/OT, protection des environnements industriels et objets connectés.</div>
   </div>
-  <div class="other"><b>Aussi :</b> Audit & tests d'intrusion · Réponse à incident · GRC (ISO 27001/27005, NIST CSF) · Gestion des vulnérabilités et des corrections.</div>
+  <div class="other" data-i18n="otherLine"><b>Aussi :</b> Audit & tests d'intrusion · Réponse à incident · GRC (ISO 27001/27005, NIST CSF) · Gestion des vulnérabilités et des corrections.</div>
 
   <div class="two">
     <div>
-      <h1>Certifications<span class="rule"></span></h1>
+      <h1><span>Certifications</span><span class="rule"></span></h1>
       <div class="stack">
         <div><span class="t">ISO 27001 Senior Lead Auditor</span> <span class="d">— PECB (2011)</span></div>
         <div><span class="t">Certified Ethical Hacker (CEH v8)</span> <span class="d">— Sysdream (2013)</span></div>
@@ -676,13 +685,13 @@ c-30 11 -692 12 -805 0z"/></g>
       </div>
     </div>
     <div>
-      <h1>Formation & langues<span class="rule"></span></h1>
+      <h1><span data-i18n="hEducation">Formation & langues</span><span class="rule"></span></h1>
       <div class="stack" style="margin-bottom:12px">
-        <div><span class="t">M. Sc. Ingénierie des systèmes, réseaux & sécurité</span><br><span class="d">ESGI, Paris — 2010</span></div>
-        <div><span class="t">Licence — Gestion des ressources informatiques</span><br><span class="d">Sup de Vinci — 2008</span></div>
+        <div><span class="t" data-i18n="edu1">M. Sc. Ingénierie des systèmes, réseaux & sécurité</span><br><span class="d">ESGI, Paris — 2010</span></div>
+        <div><span class="t" data-i18n="edu2">Licence — Gestion des ressources informatiques</span><br><span class="d">Sup de Vinci — 2008</span></div>
       </div>
-      <div class="langrow"><span>Français</span><em>Natif</em></div>
-      <div class="langrow"><span>Anglais</span><em>Professionnel</em></div>
+      <div class="langrow"><span data-i18n="langFr">Français</span><em data-i18n="lvlNative">Natif</em></div>
+      <div class="langrow"><span data-i18n="langEn">Anglais</span><em data-i18n="lvlProf">Professionnel</em></div>
     </div>
   </div>
 
@@ -690,15 +699,15 @@ c-30 11 -692 12 -805 0z"/></g>
   <section class="deepdive">
     <div class="page-header">
       <span class="pn">Pierre <b>Le Calvez</b></span>
-      <span class="pc">VP Business Consulting Cybersécurité · pierre.lecalvez@lclvz.com</span>
+      <span class="pc" data-i18n="pageHeaderPc">VP Business Consulting Cybersécurité · github.com/pedrolastiko</span>
     </div>
 
-    <h1>Mandats marquants<span class="rule"></span></h1>
+    <h1><span data-i18n="hMandates">Mandats marquants</span><span class="rule"></span></h1>
 
     <div class="mandate">
-      <h2><span class="my">Depuis 2024</span>Accompagnement à la souveraineté numérique</h2>
-      <div class="mi">Évaluation et renforcement de la souveraineté numérique d'organisations publiques et privées.</div>
-      <div class="mdetails">
+      <h2><span class="my" data-i18n="mandate1My">Depuis 2024</span><span data-i18n="mandate1Title">Accompagnement à la souveraineté numérique</span></h2>
+      <div class="mi" data-i18n="mandate1Mi">Évaluation et renforcement de la souveraineté numérique d'organisations publiques et privées.</div>
+      <div class="mdetails" data-i18n="mandate1Details">
         <div class="k">Rôle</div><div class="v">Concepteur du cadre d'évaluation et conseiller exécutif.</div>
         <div class="k">Périmètre</div><div class="v">Données, infrastructures, fournisseurs, services infonuagiques et IA ; ateliers exécutifs et feuilles de route.</div>
         <div class="k">Impact</div><div class="v"><b>Autonomie numérique</b> renforcée et meilleure maîtrise des risques géopolitiques et réglementaires.</div>
@@ -706,9 +715,9 @@ c-30 11 -692 12 -805 0z"/></g>
     </div>
 
     <div class="mandate">
-      <h2><span class="my">En cours</span>Sécurité des modèles d'IA frontières</h2>
-      <div class="mi">Adaptation des capacités de défense face à l'accélération des menaces liée à la Frontier AI.</div>
-      <div class="mdetails">
+      <h2><span class="my" data-i18n="mandate2My">En cours</span><span data-i18n="mandate2Title">Sécurité des modèles d'IA frontières</span></h2>
+      <div class="mi" data-i18n="mandate2Mi">Adaptation des capacités de défense face à l'accélération des menaces liée à la Frontier AI.</div>
+      <div class="mdetails" data-i18n="mandate2Details">
         <div class="k">Rôle</div><div class="v">Direction conceptuelle (People · Process · Technology).</div>
         <div class="k">Périmètre</div><div class="v">Maturité, gestion des vulnérabilités, gestion de crise et réponse aux incidents ; usage de l'IA défensive.</div>
         <div class="k">Impact</div><div class="v">Capacité <b>« Vulnerability Remediation as a Service » (VRaaS)</b> et Cyber Squad.</div>
@@ -716,9 +725,9 @@ c-30 11 -692 12 -805 0z"/></g>
     </div>
 
     <div class="mandate">
-      <h2><span class="my">2024 →</span>Migration & sécurisation Active Directory · Banque/Finance</h2>
-      <div class="mi">Rationalisation sécurisée d'un environnement AD de 9 forêts / 10 domaines vers une cible 1 forêt / 2 domaines.</div>
-      <div class="mdetails">
+      <h2><span class="my">2024 →</span><span data-i18n="mandate3Title">Migration & sécurisation Active Directory · Banque/Finance</span></h2>
+      <div class="mi" data-i18n="mandate3Mi">Rationalisation sécurisée d'un environnement AD de 9 forêts / 10 domaines vers une cible 1 forêt / 2 domaines.</div>
+      <div class="mdetails" data-i18n="mandate3Details">
         <div class="k">Rôle</div><div class="v">Conseil en architecture et pilotage de la migration.</div>
         <div class="k">Périmètre</div><div class="v">Architecture cible, infrastructure as code (IaC), migration.</div>
         <div class="k">Impact</div><div class="v"><b>Surface d'attaque réduite</b> et socle d'identité rationalisé.</div>
@@ -726,9 +735,9 @@ c-30 11 -692 12 -805 0z"/></g>
     </div>
 
     <div class="mandate">
-      <h2><span class="my">2024</span>Tests d'intrusion · Municipalité (Québec)</h2>
-      <div class="mi">Campagne de tests d'intrusion et d'évaluation de maturité pour une grande municipalité.</div>
-      <div class="mdetails">
+      <h2><span class="my">2024</span><span data-i18n="mandate4Title">Tests d'intrusion · Municipalité (Québec)</span></h2>
+      <div class="mi" data-i18n="mandate4Mi">Campagne de tests d'intrusion et d'évaluation de maturité pour une grande municipalité.</div>
+      <div class="mdetails" data-i18n="mandate4Details">
         <div class="k">Rôle</div><div class="v">Direction d'une équipe de 5 auditeurs.</div>
         <div class="k">Périmètre</div><div class="v">Tests internes et externes, scan de réseaux sensibles, maturité globale.</div>
         <div class="k">Impact</div><div class="v"><b>Priorités de remédiation</b> et vision consolidée de la posture.</div>
@@ -736,17 +745,17 @@ c-30 11 -692 12 -805 0z"/></g>
     </div>
 
     <div class="mandate">
-      <h2><span class="my">2023</span>Réponse à incident après fraude · Promoteur immobilier</h2>
-      <div class="mi">Intervention à la suite d'une fraude externe, avec cellule de crise (direction et services juridiques).</div>
-      <div class="mdetails">
+      <h2><span class="my">2023</span><span data-i18n="mandate5Title">Réponse à incident après fraude · Promoteur immobilier</span></h2>
+      <div class="mi" data-i18n="mandate5Mi">Intervention à la suite d'une fraude externe, avec cellule de crise (direction et services juridiques).</div>
+      <div class="mdetails" data-i18n="mandate5Details">
         <div class="k">Rôle</div><div class="v">Coordination de la réponse et de la gestion de crise.</div>
         <div class="k">Périmètre</div><div class="v">Analyse des vecteurs d'attaque, sécurisation des systèmes, mesures préventives.</div>
         <div class="k">Impact</div><div class="v"><b>Impacts limités</b> et renforcement durable des contrôles.</div>
       </div>
     </div>
 
-    <h1 style="margin-top:30px">Conférences & publications (sélection)<span class="rule"></span></h1>
-    <div class="talks">
+    <h1 style="margin-top:30px"><span data-i18n="hTalks">Conférences & publications (sélection)</span><span class="rule"></span></h1>
+    <div class="talks" data-i18n="talksBlock">
       <div class="ty">2026</div><div class="td"><b>Sommet souveraineté & sécurité à l'ère de l'IA</b> — du concept au cadre opérationnel.</div>
       <div class="ty">2025</div><div class="td"><b>Hackfest</b> — « Nos meilleures erreurs de sécurité (v2) ».</div>
       <div class="ty">2025</div><div class="td"><b>Colloque IA & cybersécurité</b> — transport maritime & naval (table ronde).</div>
@@ -756,8 +765,8 @@ c-30 11 -692 12 -805 0z"/></g>
       <div class="ty">2015</div><div class="td"><b>Les Assises de la Sécurité</b> (Monaco) — « L'objet connecté, nouvelle faille dans la sécurité de l'entreprise ? ».</div>
     </div>
 
-    <h1 style="margin-top:30px">Enseignement<span class="rule"></span></h1>
-    <div class="talks">
+    <h1 style="margin-top:30px"><span data-i18n="hTeaching">Enseignement</span><span class="rule"></span></h1>
+    <div class="talks" data-i18n="teachingBlock">
       <div class="ty">2017–2021</div><div class="td"><b>ESGI</b>, Paris — hygiène informatique (ANSSI), systèmes de management de la sécurité de l'information.</div>
       <div class="ty">2015–2017</div><div class="td"><b>Learning Tree International</b> — évaluation des vulnérabilités, piratage éthique & contre-mesures.</div>
     </div>
@@ -765,9 +774,155 @@ c-30 11 -692 12 -805 0z"/></g>
 
 </div>
 
-<button class="pdf-btn" onclick="window.print()" aria-label="Générer le PDF">
-  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
-  Générer le PDF
+<button id="langToggle" type="button" class="lang-btn" onclick="toggleCvLang()" aria-label="Switch language / Changer de langue">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg>
+  <span id="langToggleLabel">EN</span>
 </button>
+
+<button class="pdf-btn" onclick="window.print()" aria-label="Générer le PDF" id="pdfBtn">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+  <span id="pdfBtnLabel">Générer le PDF</span>
+</button>
+
+<script>
+(function(){
+  var I18N = {
+    fr: {
+      pageTitle: "Pierre Le Calvez — CV · Dossier",
+      role: "Vice-Président, Business Consulting — Cybersécurité<br>Coleader de la pratique nationale · CGI Canada",
+      introText: "J'accompagne les organisations sur leurs enjeux de résilience, d'intelligence artificielle et de souveraineté numérique.",
+      kwCloud: '<span class="kw">Souveraineté numérique</span><span class="kw">Résilience cyber</span><span class="kw">IA de confiance</span><span class="kw">Gestion du risque cyber</span><span class="kw">Sécurité des identités</span><span class="kw">Sécurité OT et convergence IT/OT</span><span class="kw">Architecture Zero Trust</span><span class="kw">Protection des infrastructures critiques</span><span class="kw">Confiance numérique</span>',
+      exec: "<p>Je suis un dirigeant reconnu en cybersécurité, confiance numérique et transformation des organisations, cumulant plus de 22 années d'expérience en technologies de l'information, dont plus de 17 ans en cybersécurité.</p><p>Vice-président Business Consulting chez CGI Canada, je co-dirige la pratique nationale cybersécurité et j'accompagne des dirigeants, conseils d'administration et organisations critiques dans leurs enjeux de résilience, d'intelligence artificielle et de souveraineté numérique.</p><p>Mon expertise couvre la cybersécurité stratégique, la gouvernance, la sécurité des environnements IT & OT, le cloud, la gestion des identités, la cyberdéfense ainsi que les transformations technologiques liées à l'intelligence artificielle. Mes travaux récents portent sur la sécurité des IA Frontières, la gouvernance de l'IA, la souveraineté numérique.</p><p>Conférencier et formateur, je contribue activement au développement de la confiance numérique au travers de publications, conférences et groupes de travail internationaux. Je représente également CGI auprès de la communauté de Cybersécurité et notamment des initiatives avec Cybereco.</p>",
+      hExperience: "Expérience",
+      exp1Yr: "2021 – présent",
+      exp1Pos: "Vice-Président Business Consulting — Cybersécurité",
+      exp1Li: "<li>Structuration et développement d'une équipe de 85+ professionnels à Montréal.</li><li>Développement et industrialisation du catalogue d'offres cybersécurité.</li><li>Direction de mandats de conseil en cybersécurité au niveau exécutif.</li><li>Interventions comme vCISO, auditeur et conseiller stratégique pour des clients majeurs.</li><li>Pilotage du développement des affaires et des opportunités stratégiques.</li><li>Représentation de CGI lors d'événements et conférences en cybersécurité.</li>",
+      exp2Pos: "Senior Manager — Gouvernance, Audit et Réponse aux incidents",
+      exp2Co: "NTT Data · Multi-sites, Europe",
+      exp2Li: "<li>Création d'offres de services en gouvernance, audit et réponse aux incidents.</li><li>Gestion d'une équipe de 20 consultants.</li><li>Mise en place de programmes de gestion des risques liés aux tiers.</li><li>Direction de projets de transformation des risques et de la résilience.</li><li>Pilotage du programme de certification ISO 27001 pour l'entité française.</li>",
+      exp3Pos: "Auditeur en cybersécurité",
+      exp3Li: "<li>Réalisation d'audits ISO 27001 et d'évaluations de risques.</li><li>Réalisation de tests d'intrusion et d'analyses post-incident.</li>",
+      exp4Pos: "Assistant — Bureau du CISO",
+      exp4Li: "<li>Conception de tableaux de bord et d'indicateurs de sécurité.</li><li>Suivi des plans de remédiation issus des audits.</li><li>Contribution aux initiatives de continuité d'activité.</li>",
+      exp5Li: "<li>Développement de solides bases en opérations IT d'entreprise avant la transition vers la cybersécurité.</li>",
+      hSkills: "Domaines d'expertise",
+      skillsBlob: '<div class="sn">Souveraineté numérique</div><div class="sd">Cadre d\'évaluation, réduction des dépendances technologiques, autonomie et résilience.</div><div class="sn">Résilience & gestion du risque cyber</div><div class="sd">Quantification du risque, continuité, montée en maturité (NIST CSF 2.0, ISO 27001, CIS).</div><div class="sn">Sécurité de l\'IA / IA de confiance</div><div class="sd">Sécurité des modèles frontières, gouvernance de l\'IA, Defensive AI.</div><div class="sn">Sécurité des identités (humaines & non humaines)</div><div class="sd">IAM/IGA, sécurisation d\'Active Directory, architecture Zero Trust.</div><div class="sn">Sécurité OT & infrastructures critiques</div><div class="sd">Convergence IT/OT, protection des environnements industriels et objets connectés.</div>',
+      otherLine: "<b>Aussi :</b> Audit & tests d'intrusion · Réponse à incident · GRC (ISO 27001/27005, NIST CSF) · Gestion des vulnérabilités et des corrections.",
+      hEducation: "Formation & langues",
+      edu1: "M. Sc. Ingénierie des systèmes, réseaux & sécurité",
+      edu2: "Licence — Gestion des ressources informatiques",
+      langFr: "Français", lvlNative: "Natif", langEn: "Anglais", lvlProf: "Professionnel",
+      pageHeaderPc: "VP Business Consulting Cybersécurité · github.com/pedrolastiko",
+      hMandates: "Mandats marquants",
+      mandate1My: "Depuis 2024",
+      mandate1Title: "Accompagnement à la souveraineté numérique",
+      mandate1Mi: "Évaluation et renforcement de la souveraineté numérique d'organisations publiques et privées.",
+      mandate1Details: "<div class=\"k\">Rôle</div><div class=\"v\">Concepteur du cadre d'évaluation et conseiller exécutif.</div><div class=\"k\">Périmètre</div><div class=\"v\">Données, infrastructures, fournisseurs, services infonuagiques et IA ; ateliers exécutifs et feuilles de route.</div><div class=\"k\">Impact</div><div class=\"v\"><b>Autonomie numérique</b> renforcée et meilleure maîtrise des risques géopolitiques et réglementaires.</div>",
+      mandate2My: "En cours",
+      mandate2Title: "Sécurité des modèles d'IA frontières",
+      mandate2Mi: "Adaptation des capacités de défense face à l'accélération des menaces liée à la Frontier AI.",
+      mandate2Details: "<div class=\"k\">Rôle</div><div class=\"v\">Direction conceptuelle (People · Process · Technology).</div><div class=\"k\">Périmètre</div><div class=\"v\">Maturité, gestion des vulnérabilités, gestion de crise et réponse aux incidents ; usage de l'IA défensive.</div><div class=\"k\">Impact</div><div class=\"v\">Capacité <b>« Vulnerability Remediation as a Service » (VRaaS)</b> et Cyber Squad.</div>",
+      mandate3Title: "Migration & sécurisation Active Directory · Banque/Finance",
+      mandate3Mi: "Rationalisation sécurisée d'un environnement AD de 9 forêts / 10 domaines vers une cible 1 forêt / 2 domaines.",
+      mandate3Details: "<div class=\"k\">Rôle</div><div class=\"v\">Conseil en architecture et pilotage de la migration.</div><div class=\"k\">Périmètre</div><div class=\"v\">Architecture cible, infrastructure as code (IaC), migration.</div><div class=\"k\">Impact</div><div class=\"v\"><b>Surface d'attaque réduite</b> et socle d'identité rationalisé.</div>",
+      mandate4Title: "Tests d'intrusion · Municipalité (Québec)",
+      mandate4Mi: "Campagne de tests d'intrusion et d'évaluation de maturité pour une grande municipalité.",
+      mandate4Details: "<div class=\"k\">Rôle</div><div class=\"v\">Direction d'une équipe de 5 auditeurs.</div><div class=\"k\">Périmètre</div><div class=\"v\">Tests internes et externes, scan de réseaux sensibles, maturité globale.</div><div class=\"k\">Impact</div><div class=\"v\"><b>Priorités de remédiation</b> et vision consolidée de la posture.</div>",
+      mandate5Title: "Réponse à incident après fraude · Promoteur immobilier",
+      mandate5Mi: "Intervention à la suite d'une fraude externe, avec cellule de crise (direction et services juridiques).",
+      mandate5Details: "<div class=\"k\">Rôle</div><div class=\"v\">Coordination de la réponse et de la gestion de crise.</div><div class=\"k\">Périmètre</div><div class=\"v\">Analyse des vecteurs d'attaque, sécurisation des systèmes, mesures préventives.</div><div class=\"k\">Impact</div><div class=\"v\"><b>Impacts limités</b> et renforcement durable des contrôles.</div>",
+      hTalks: "Conférences & publications (sélection)",
+      talksBlock: '<div class="ty">2026</div><div class="td"><b>Sommet souveraineté & sécurité à l\'ère de l\'IA</b> — du concept au cadre opérationnel.</div><div class="ty">2025</div><div class="td"><b>Hackfest</b> — « Nos meilleures erreurs de sécurité (v2) ».</div><div class="ty">2025</div><div class="td"><b>Colloque IA & cybersécurité</b> — transport maritime & naval (table ronde).</div><div class="ty">2024</div><div class="td"><b>SéQCure</b> — « Quand le sous-traitant devient sur-stressant ».</div><div class="ty">2023</div><div class="td"><b>Forum InCyber (FIC)</b> — « Cybersécurité pour une IA de confiance » (table ronde).</div><div class="ty">2019</div><div class="td"><b>MISC Magazine n°105</b> — « L\'audit de sous-traitants ».</div><div class="ty">2015</div><div class="td"><b>Les Assises de la Sécurité</b> (Monaco) — « L\'objet connecté, nouvelle faille dans la sécurité de l\'entreprise ? ».</div>',
+      hTeaching: "Enseignement",
+      teachingBlock: '<div class="ty">2017–2021</div><div class="td"><b>ESGI</b>, Paris — hygiène informatique (ANSSI), systèmes de management de la sécurité de l\'information.</div><div class="ty">2015–2017</div><div class="td"><b>Learning Tree International</b> — évaluation des vulnérabilités, piratage éthique & contre-mesures.</div>',
+      pdfBtnText: "Générer le PDF"
+    },
+    en: {
+      pageTitle: "Pierre Le Calvez — Résumé · Dossier",
+      role: "Vice-President, Business Consulting — Cybersecurity<br>Co-lead of the national practice · CGI Canada",
+      introText: "I help organizations navigate resilience, artificial intelligence, and digital sovereignty challenges.",
+      kwCloud: '<span class="kw">Digital sovereignty</span><span class="kw">Cyber resilience</span><span class="kw">Trustworthy AI</span><span class="kw">Cyber risk management</span><span class="kw">Identity security</span><span class="kw">OT security & IT/OT convergence</span><span class="kw">Zero Trust architecture</span><span class="kw">Critical infrastructure protection</span><span class="kw">Digital trust</span>',
+      exec: "<p>I am a recognized executive in cybersecurity, digital trust, and organizational transformation, with more than 22 years of experience in information technology, including over 17 years in cybersecurity.</p><p>Vice-President, Business Consulting at CGI Canada, I co-lead the national cybersecurity practice and advise executives, boards of directors, and critical organizations on their resilience, artificial intelligence, and digital sovereignty challenges.</p><p>My expertise spans strategic cybersecurity, governance, IT & OT security, cloud, identity management, and cyber defense, as well as technology transformations tied to artificial intelligence. My recent work focuses on Frontier AI security, AI governance, and digital sovereignty.</p><p>A speaker and trainer, I actively contribute to advancing digital trust through publications, conferences, and international working groups. I also represent CGI within the cybersecurity community, notably through initiatives with Cybereco.</p>",
+      hExperience: "Experience",
+      exp1Yr: "2021 – present",
+      exp1Pos: "Vice-President Business Consulting — Cybersecurity",
+      exp1Li: "<li>Built and scaled a team of 85+ professionals in Montréal.</li><li>Developed and industrialized the cybersecurity service catalogue.</li><li>Led executive-level cybersecurity advisory engagements.</li><li>Acted as vCISO, auditor, and strategic advisor for major clients.</li><li>Drove business development and strategic opportunities.</li><li>Represented CGI at cybersecurity events and conferences.</li>",
+      exp2Pos: "Senior Manager — Governance, Audit and Incident Response",
+      exp2Co: "NTT Data · Multiple locations, Europe",
+      exp2Li: "<li>Created service offerings in governance, audit, and incident response.</li><li>Managed a team of 20 consultants.</li><li>Implemented third-party risk management programs.</li><li>Led risk and resilience transformation projects.</li><li>Led the ISO 27001 certification program for the French entity.</li>",
+      exp3Pos: "Cybersecurity Auditor",
+      exp3Li: "<li>Conducted ISO 27001 audits and risk assessments.</li><li>Performed penetration testing and post-incident analysis.</li>",
+      exp4Pos: "CISO Office Assistant",
+      exp4Li: "<li>Designed security dashboards and KPIs.</li><li>Tracked audit remediation plans.</li><li>Contributed to business continuity initiatives.</li>",
+      exp5Li: "<li>Built a strong foundation in enterprise IT operations before transitioning into cybersecurity.</li>",
+      hSkills: "Areas of Expertise",
+      skillsBlob: '<div class="sn">Digital Sovereignty</div><div class="sd">Assessment framework, reduced technology dependencies, autonomy and resilience.</div><div class="sn">Cyber Resilience & Risk Management</div><div class="sd">Risk quantification, continuity, maturity uplift (NIST CSF 2.0, ISO 27001, CIS).</div><div class="sn">AI Security / Trustworthy AI</div><div class="sd">Frontier model security, AI governance, Defensive AI.</div><div class="sn">Identity Security (Human & Non-Human)</div><div class="sd">IAM/IGA, Active Directory hardening, Zero Trust architecture.</div><div class="sn">OT Security & Critical Infrastructure</div><div class="sd">IT/OT convergence, protection of industrial environments and connected devices.</div>',
+      otherLine: "<b>Also:</b> Audit & penetration testing · Incident response · GRC (ISO 27001/27005, NIST CSF) · Vulnerability and patch management.",
+      hEducation: "Education & Languages",
+      edu1: "M.Sc. in Systems, Network & Security Engineering",
+      edu2: "Bachelor's Degree — IT Resource Management",
+      langFr: "French", lvlNative: "Native", langEn: "English", lvlProf: "Professional",
+      pageHeaderPc: "VP Business Consulting Cybersecurity · github.com/pedrolastiko",
+      hMandates: "Notable Engagements",
+      mandate1My: "Since 2024",
+      mandate1Title: "Digital Sovereignty Advisory",
+      mandate1Mi: "Assessing and strengthening digital sovereignty for public and private organizations.",
+      mandate1Details: "<div class=\"k\">Role</div><div class=\"v\">Designed the assessment framework; executive advisor.</div><div class=\"k\">Scope</div><div class=\"v\">Data, infrastructure, vendors, cloud and AI services; executive workshops and roadmaps.</div><div class=\"k\">Impact</div><div class=\"v\">Strengthened <b>digital autonomy</b> and improved control over geopolitical and regulatory risks.</div>",
+      mandate2My: "Ongoing",
+      mandate2Title: "Frontier AI Model Security",
+      mandate2Mi: "Adapting defensive capabilities to the accelerating threats posed by Frontier AI.",
+      mandate2Details: "<div class=\"k\">Role</div><div class=\"v\">Conceptual leadership (People · Process · Technology).</div><div class=\"k\">Scope</div><div class=\"v\">Maturity, vulnerability management, crisis management and incident response; use of defensive AI.</div><div class=\"k\">Impact</div><div class=\"v\"><b>\"Vulnerability Remediation as a Service\" (VRaaS)</b> capability and Cyber Squad.</div>",
+      mandate3Title: "Active Directory Migration & Hardening · Banking/Finance",
+      mandate3Mi: "Secure rationalization of an AD environment from 9 forests / 10 domains to a target of 1 forest / 2 domains.",
+      mandate3Details: "<div class=\"k\">Role</div><div class=\"v\">Architecture advisory and migration leadership.</div><div class=\"k\">Scope</div><div class=\"v\">Target architecture, infrastructure as code (IaC), migration.</div><div class=\"k\">Impact</div><div class=\"v\"><b>Reduced attack surface</b> and a rationalized identity foundation.</div>",
+      mandate4Title: "Penetration Testing · Municipality (Québec)",
+      mandate4Mi: "Penetration testing campaign and maturity assessment for a large municipality.",
+      mandate4Details: "<div class=\"k\">Role</div><div class=\"v\">Led a team of 5 auditors.</div><div class=\"k\">Scope</div><div class=\"v\">Internal and external testing, sensitive network scanning, overall maturity.</div><div class=\"k\">Impact</div><div class=\"v\"><b>Remediation priorities</b> and a consolidated view of the security posture.</div>",
+      mandate5Title: "Incident Response After Fraud · Real Estate Developer",
+      mandate5Mi: "Response to an external fraud, with a crisis cell (management and legal).",
+      mandate5Details: "<div class=\"k\">Role</div><div class=\"v\">Coordinated the response and crisis management.</div><div class=\"k\">Scope</div><div class=\"v\">Attack vector analysis, systems hardening, preventive measures.</div><div class=\"k\">Impact</div><div class=\"v\"><b>Limited impact</b> and lasting reinforcement of controls.</div>",
+      hTalks: "Conferences & Publications (Selected)",
+      talksBlock: '<div class="ty">2026</div><div class="td"><b>AI-Era Sovereignty & Security Summit</b> — from concept to operational framework.</div><div class="ty">2025</div><div class="td"><b>Hackfest</b> — "Our Best Security Mistakes (v2)".</div><div class="ty">2025</div><div class="td"><b>AI & Cybersecurity Symposium</b> — maritime & naval transport (panel).</div><div class="ty">2024</div><div class="td"><b>SéQCure</b> — "When the Subcontractor Becomes Overly Stressful".</div><div class="ty">2023</div><div class="td"><b>InCyber Forum (FIC)</b> — "Cybersecurity for Trustworthy AI" (panel).</div><div class="ty">2019</div><div class="td"><b>MISC Magazine No. 105</b> — "Auditing Subcontractors".</div><div class="ty">2015</div><div class="td"><b>Les Assises de la Sécurité</b> (Monaco) — "Connected Devices: A New Security Gap for Enterprises?".</div>',
+      hTeaching: "Teaching",
+      teachingBlock: '<div class="ty">2017–2021</div><div class="td"><b>ESGI</b>, Paris — IT security hygiene (ANSSI), information security management systems.</div><div class="ty">2015–2017</div><div class="td"><b>Learning Tree International</b> — vulnerability assessment, ethical hacking & countermeasures.</div>',
+      pdfBtnText: "Generate PDF"
+    }
+  };
+
+  var KEYS = Object.keys(I18N.fr);
+
+  function applyLang(lang){
+    document.documentElement.lang = lang;
+    KEYS.forEach(function(key){
+      var els = document.querySelectorAll('[data-i18n="' + key + '"]');
+      els.forEach(function(el){ el.innerHTML = I18N[lang][key]; });
+    });
+    document.title = I18N[lang].pageTitle;
+    var toggleLabel = document.getElementById('langToggleLabel');
+    if (toggleLabel) toggleLabel.textContent = lang === 'fr' ? 'EN' : 'FR';
+    var pdfLabel = document.getElementById('pdfBtnLabel');
+    if (pdfLabel) pdfLabel.textContent = I18N[lang].pdfBtnText;
+    var pdfBtn = document.getElementById('pdfBtn');
+    if (pdfBtn) pdfBtn.setAttribute('aria-label', I18N[lang].pdfBtnText);
+    try { localStorage.setItem('cvLang', lang); } catch (e) {}
+    window.__cvLang = lang;
+  }
+
+  function detectLang(){
+    try {
+      var stored = localStorage.getItem('cvLang');
+      if (stored === 'fr' || stored === 'en') return stored;
+    } catch (e) {}
+    var nav = ((navigator.language || (navigator.languages && navigator.languages[0]) || 'fr') + '').toLowerCase();
+    return nav.indexOf('en') === 0 ? 'en' : 'fr';
+  }
+
+  window.toggleCvLang = function(){
+    applyLang(window.__cvLang === 'fr' ? 'en' : 'fr');
+  };
+
+  applyLang(detectLang());
+})();
+</script>
 </body>
 </html>
